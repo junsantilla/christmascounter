@@ -156,7 +156,9 @@
 			function createSnowflake() {
 				const snowflake = document.createElement("div");
 				snowflake.className = "snowflake";
-				snowflake.style.left = `${Math.random() * window.innerWidth}px`;
+				snowflake.style.left = `${
+					Math.random() * (window.innerWidth - 50)
+				}px`;
 				snowflake.style.animationDuration = `${Math.random() * 5 + 4}s`;
 				snowflake.textContent = "❄";
 				document.body.appendChild(snowflake);
